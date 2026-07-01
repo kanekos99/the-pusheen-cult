@@ -26,6 +26,10 @@ a {
   color: #5370b1;
 }
 
+a:hover {
+  color: #243c6f;
+}
+
 a .site-title {
   font-family: vanilla;
   text-align: center;
@@ -163,6 +167,16 @@ h3 {
 
 .brown-text {
   color: rgb(141, 80, 36);
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.caption-text {
+  font-size: 0.9em;
+  width: 100%;
+  text-align: center;
 }
 
 nav {
@@ -312,6 +326,10 @@ nav {
     width: 300px;
   }
 
+  .about-img {
+    width: 300px;
+  }
+
   .text-desktop {
     display: none;
   }
@@ -373,6 +391,10 @@ nav {
 
 @media only screen and (max-width: 400px) {
   .pusheen-img {
+    width: 200px;
+  }
+
+  .about-img {
     width: 200px;
   }
 }
