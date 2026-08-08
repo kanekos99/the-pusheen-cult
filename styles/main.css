@@ -166,6 +166,10 @@ h3 {
   color: black;
 }
 
+.red-text {
+  color: red;
+}
+
 .brown-text {
   color: rgb(141, 80, 36);
 }
@@ -285,6 +289,64 @@ nav {
 .lined-divider {
   border-top: 3px solid #2b7379;
   opacity: 1;
+}
+
+.form-page {
+  justify-content: start;
+}
+
+.form {
+  font-family: "Delius Swash Caps", cursive;
+  color: #5d6365;
+}
+
+.form-heading {
+  font-size: 20px;
+}
+
+.form-heading-sm {
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-text-input {
+  font-size: 18px;
+  background: none;
+  border: 1px solid #f1f1f1;
+  padding: 5px !important;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+.submit-btn {
+  padding: 5px 25px;
+  background: linear-gradient(to bottom, #697da7 0%, #465a84 100%);
+  border: 1px solid #334363;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: "Delius Swash Caps", cursive;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to bottom, #768bb7 0%, #4e6594 100%);
+  color: #ffffff;
+  transform: scale(1.01);
 }
 
 .text-mobile {
