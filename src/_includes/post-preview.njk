@@ -1,0 +1,15 @@
+<div class="blog-post mb-5">
+    <h3 class="blog-title">
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h2>
+    <div class="blog-heading">
+        <span>{{ post.data.date | postDate }}</span>
+        <span>
+            <a href="">0 Comments</a>
+        </span>
+    </div>
+    <hr class="blog-heading-divider"/>
+    <div class="post-content">
+        {{ post.content | safe }}
+    </div>
+</div>

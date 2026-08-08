@@ -4,10 +4,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/styles");
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPassthroughCopy("./src/scripts");
-  eleventyConfig.addPassthroughCopy("./src/posts/images");
+  eleventyConfig.addPassthroughCopy("./src/stories/images");
 
   eleventyConfig.addFilter("postDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_SHORT);
   });
 
   eleventyConfig.addCollection("allTags", function (collectionApi) {

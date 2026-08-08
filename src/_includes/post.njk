@@ -1,0 +1,28 @@
+---
+layout: "base.njk"
+---
+
+<div
+        class="content-box py-5 px-5 rounded-box-bottom shadow-sm blog-page-content-box"
+      >
+    <div class="blog-container mb-4">
+        <div class="blog-post">
+            <h3 class="blog-title">
+                <a href="">{{ title }}</a>
+            </h2>
+            <div class="blog-heading">
+                <span>{{ date | postDate }}</span>
+                <span>
+                    <a href="">0 Comments</a>
+                </span>
+            </div>
+            <hr class="blog-heading-divider"/>
+            <div class="post-content">
+                {{ content | safe }}
+            </div>
+        </div>
+    </div>
+    <div class="img-container">
+        <img class="side-img" src="{{ '/assets/hamburger.png' | url }}"/>
+    </div>
+</div>

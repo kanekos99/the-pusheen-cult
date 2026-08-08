@@ -1,0 +1,5 @@
+{
+    "layout": "post.njk",
+    "tags": "stories",
+    "permalink": "/saintly-sunday-stories/{{ page.fileSlug }}/"
+}

@@ -1,0 +1,5 @@
+{
+    "layout": "post.njk",
+    "tags": "prayers",
+    "permalink": "/daily-prayers/{{ page.date | date: '%Y-%m-%d' }}-{{ page.fileSlug }}/"
+}
