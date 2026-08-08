@@ -395,6 +395,15 @@ nav {
   margin: 0.5rem 0rem 1rem 0rem;
 }
 
+.post-body-img-container {
+  margin: auto;
+  text-align: center;
+}
+
+.post-body-img-l {
+  max-width: 100%;
+}
+
 .text-mobile {
   display: none;
 }
