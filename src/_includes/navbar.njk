@@ -1,0 +1,46 @@
+<nav>
+    <ul class="nav-row">
+        <li class="{% if page.url == '/' %}active-nav{% endif %}">
+            <a href="{{ '/' | url }}">Home</a>
+        </li>
+        <li class="{% if page.url == '/about-worship/' %}active-nav{% endif %}">
+            <a href="{{ '/about-worship/' | url }}">About Worship</a>
+        </li>
+        <li class="{% if page.url == '/join-up/' %}active-nav{% endif %}">
+            <a href="{{ '/join-up/' | url }}">Join up</a>
+        </li>
+        <li class="{% if page.url == '/daily-prayers/' %}active-nav{% endif %}">
+            <a href="{{ '/daily-prayers/' | url }}">Daily Prayers</a>
+        </li>
+        <li class="dropdown-container">
+            <span class="text-desktop">more...</span>
+            <span class="text-mobile">Menu</span>
+            <ul class="dropdown-menu-custom">
+                <li class="nav-mobile">
+                    <a href="{{ '/' | url }}">Home</a>
+                </li>
+                <li class="nav-mobile">
+                    <a href="{{ '/about-worship/' | url }}">About Worship</a>
+                </li>
+                <li class="nav-mobile">
+                    <a href="{{ '/join-up/' | url }}">Join up</a>
+                </li>
+                <li class="nav-mobile">
+                    <a href="{{ '/daily-prayers/' | url }}">Daily Prayers</a>
+                </li>
+                <li>
+                    <a href="{{ '/the-daily-purrphet/' | url }}">The Daily Purrphet</a>
+                </li>
+                <li>
+                    <a href="{{ '/the-lord-is-listening/' | url }}">The Lord is listening</a>
+                </li>
+                <li>
+                    <a href="{{ '/testimonials/' | url }}">Testimonials</a>
+                </li>
+                <li>
+                    <a href="{{ '/saintly-sunday-stories/' | url }}">Saintly Sunday Stories</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

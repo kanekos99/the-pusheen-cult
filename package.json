@@ -1,0 +1,26 @@
+{
+  "name": "the-pusheen-cult",
+  "version": "1.0.0",
+  "description": "a remake of the pusheen cult weebly website from scratch  * New WIP site: https://kanekos99.github.io/the-pusheen-cult * Old soon to be defunct site: https://the-pusheen-cult.weebly.com/",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanekos99/the-pusheen-cult.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kanekos99/the-pusheen-cult/issues"
+  },
+  "homepage": "https://github.com/kanekos99/the-pusheen-cult#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
