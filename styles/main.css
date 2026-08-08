@@ -363,6 +363,38 @@ nav {
   transform: scale(1.01);
 }
 
+.blog-page-content-box {
+  justify-content: space-between;
+}
+
+.blog-container {
+  width: 70%;
+}
+
+.img-container {
+  width: 25%;
+}
+
+.side-img {
+  width: 100%;
+}
+
+.blog-title {
+  margin-bottom: 0.5rem;
+}
+
+.blog-heading {
+  display: flex;
+  justify-content: space-between;
+  color: #96a2a6;
+  font-family: "Delius Swash Caps", cursive;
+  font-size: 0.9rem;
+}
+
+.blog-heading-divider {
+  margin: 0.5rem 0rem 1rem 0rem;
+}
+
 .text-mobile {
   display: none;
 }
@@ -481,6 +513,14 @@ nav {
 
   .form-text-input {
     width: 100%;
+  }
+
+  .blog-container {
+    width: 100%;
+  }
+
+  .img-container {
+    display: none;
   }
 }
 
