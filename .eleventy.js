@@ -90,6 +90,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/the-pusheen-cult/",
     dir: {
       input: "src",
       output: "public",
