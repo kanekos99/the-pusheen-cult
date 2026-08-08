@@ -170,6 +170,10 @@ h3 {
   color: rgb(141, 80, 36);
 }
 
+.center-text {
+  text-align: center;
+}
+
 .justify-text {
   text-align: justify;
 }
@@ -276,6 +280,11 @@ nav {
 
 .dropdown-menu-custom li a:hover {
   color: #173f96;
+}
+
+.lined-divider {
+  border-top: 3px solid #2b7379;
+  opacity: 1;
 }
 
 .text-mobile {
