@@ -29,7 +29,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Join up - The Pusheen Cult</title>
+    <title>The Lord is listening - The Pusheen Cult</title>
     <link rel="icon" type="image/x-icon" href="./assets/icon.png" />
   </head>
   <body>
@@ -45,7 +45,7 @@
         <li>
           <a href="about-worship.html">About Worship</a>
         </li>
-        <li class="active-nav"><a href="join-up.html">Join up</a></li>
+        <li><a href="join-up.html">Join up</a></li>
         <li><a href="#">Daily Prayers</a></li>
         <li class="dropdown-container">
           <span class="text-desktop">more...</span>
@@ -58,7 +58,9 @@
             <li class="nav-mobile"><a href="join-up.html">Join up</a></li>
             <li class="nav-mobile"><a href="#">Daily Prayers</a></li>
             <li><a href="#">The Daily Purrphet</a></li>
-            <li><a href="the-lord-is-listening.html">The Lord is listening</a></li>
+            <li>
+              <a href="the-lord-is-listening.html">The Lord is listening</a>
+            </li>
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="#">Saintly Sunday Stories</a></li>
           </ul>
@@ -67,7 +69,11 @@
     </nav>
     <div class="content-container mb-5 pt-5 shadow pb-4">
       <div class="content-box py-5 px-5 rounded-box-bottom shadow-sm form-page">
-        <p>Simply fill up the form to join the Holy Worship! ^.^</p>
+        <p>
+          The Lord is always listening. Send your prayers and she may respond.
+          <br />
+          Alternatively, you can also send in your testimonials to us here.
+        </p>
         <div class="form mb-5">
           <div>
             <label class="form-heading"
@@ -92,11 +98,50 @@
           </div>
           <div class="mt-3">
             <label class="form-heading"
-              >Email</span></label
+              >Email <span class="red-text">*</span></label
             >
           </div>
           <div class="form-group">
-            <input type="email" id="email-input" class="form-text-input w-100" />
+            <input
+              type="email"
+              id="email-input"
+              class="form-text-input w-100"
+            />
+          </div>
+          <div class="mt-3 mb-2">
+            <label class="form-heading"
+              >Type <span class="red-text">*</span></label
+            >
+          </div>
+          <div class="radio-group">
+            <div>
+              <input
+                type="radio"
+                id="prayers-radio"
+                value="Prayers"
+                name="submission-type"
+              />
+              <label for="prayers-radio" class="radio-label">Prayers</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="testimonials-radio"
+                value="Testimonials"
+                name="submission-type"
+              />
+              <label for="testimonials-radio" class="radio-label"
+                >Testimonials</label
+              >
+            </div>
+          </div>
+          <div class="mt-3 mb-2">
+            <label class="form-heading"
+              >Message <span class="red-text">*</span></label
+            >
+          </div>
+          <div>
+            <textarea class="form-text-input message-box"></textarea>
           </div>
           <div class="mt-4">
             <button class="submit-btn">Submit</button>

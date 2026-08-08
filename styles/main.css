@@ -301,7 +301,8 @@ nav {
 }
 
 .form-heading {
-  font-size: 20px;
+  font-size: 18px;
+  color: #96a2a6;
 }
 
 .form-heading-sm {
@@ -325,6 +326,19 @@ nav {
   -webkit-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.3);
   display: block;
+}
+
+.radio-group {
+  display: block;
+}
+
+.radio-label {
+  font-size: 1.2rem;
+}
+
+.message-box {
+  min-width: 100%;
+  min-height: 200px;
 }
 
 .submit-btn {
@@ -459,6 +473,14 @@ nav {
     max-height: 500px;
     pointer-events: auto;
     transform: translateX(-50%) translateY(0);
+  }
+
+  .form-label-box {
+    width: 100%;
+  }
+
+  .form-text-input {
+    width: 100%;
   }
 }
 
