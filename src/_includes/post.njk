@@ -13,7 +13,7 @@ layout: "base.njk"
             <div class="blog-heading">
                 <span>{{ date | postDate }}</span>
                 <span>
-                    <a href="">0 Comments</a>
+                    <a href="#comments" id="post-comment-count"></a>
                 </span>
             </div>
             <hr class="blog-heading-divider"/>
@@ -21,6 +21,8 @@ layout: "base.njk"
                 {{ content | safe }}
             </div>
         </div>
+        <div id="comments"></div>
+        <script src="{{ '/scripts/comment-widget.js' | url }}"></script>
     </div>
     <div class="img-container">
         <img class="side-img" src="{{ '/assets/hamburger.png' | url }}"/>
