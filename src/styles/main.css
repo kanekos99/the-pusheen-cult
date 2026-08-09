@@ -479,6 +479,10 @@ nav {
     display: none;
   }
 
+  a .site-title {
+  font-size: 3.1em;
+}
+
   .dropdown-menu-custom li a {
     display: block;
     font-size: 1em;
@@ -487,7 +491,7 @@ nav {
   .nav-row li.dropdown-container {
     width: 100%;
     opacity: 100%;
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .dropdown-menu-custom {
