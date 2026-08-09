@@ -268,8 +268,9 @@ function getComments() {
       c_container.innerHTML = s_noCommentsText;
     } else {
       displayComments(comments);
-      updateCommentCount(comments);
     }
+
+    updateCommentCount(comments);
 
     c_submitButton.disabled = false; // Now that everything is done, re-enable the submit button
   });
@@ -679,7 +680,9 @@ getComments(); // Run once on page load
 function updateCommentCount(comments) {
   commentCount = comments.length;
   const c_comment_count = document.getElementById("post-comment-count");
-  if (commentCount == 1) {
+  if (commentCount == 0) {
+    c_comment_count.innerHTML = "0 comments";
+  } else if (commentCount == 1) {
     c_comment_count.innerHTML = commentCount + " comment";
   } else {
     c_comment_count.innerHTML = commentCount + " comments";
