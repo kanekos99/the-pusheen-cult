@@ -13,6 +13,7 @@
 />
 
         <link rel="stylesheet" type="text/css" href="/the-pusheen-cult/styles/main.css"/>
+        <link rel="stylesheet" type="text/css" href="/the-pusheen-cult/styles/images.css"/>
         <link rel="stylesheet" type="text/css" href="/the-pusheen-cult/styles/comment-widget.css"/>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -37,26 +38,26 @@
         <header>
             <div class="top-bar shadow-sm"></div>
             <div class="mt-5">
-                <a href="">
+                <a href="/">
                     <h1 class="site-title">The Pusheen Cult</h1>
                 </a>
             </div>
         </header>
         <nav>
     <ul class="nav-row">
-        <li class="">
+        <li class=" nav-item">
             <a href="/the-pusheen-cult/">Home</a>
         </li>
-        <li class="">
+        <li class=" nav-item">
             <a href="/the-pusheen-cult/about-worship/">About Worship</a>
         </li>
-        <li class="">
-            <a href="/the-pusheen-cult/join-up/">Join up</a>
+        <li class=" nav-item">
+            <a href="/the-pusheen-cult/join-up/">Join Up</a>
         </li>
-        <li class="">
+        <li class=" nav-item">
             <a href="/the-pusheen-cult/daily-prayers/">Daily Prayers</a>
         </li>
-        <li class="dropdown-container">
+        <li class="dropdown-container nav-item">
             <span class="text-desktop">more...</span>
             <span class="text-mobile">Menu</span>
             <ul class="dropdown-menu-custom">
@@ -67,13 +68,13 @@
                     <a href="/the-pusheen-cult/about-worship/">About Worship</a>
                 </li>
                 <li class="nav-mobile">
-                    <a href="/the-pusheen-cult/join-up/">Join up</a>
+                    <a href="/the-pusheen-cult/join-up/">Join Up</a>
                 </li>
                 <li class="nav-mobile">
                     <a href="/the-pusheen-cult/daily-prayers/">Daily Prayers</a>
                 </li>
                 <li>
-                    <a href="">The Daily Purrphet</a>
+                    <a href="/the-pusheen-cult/the-daily-purrphet/">The Daily Purrphet</a>
                 </li>
                 <li>
                     <a href="/the-pusheen-cult/the-lord-is-listening/">The Lord is listening</a>
@@ -101,7 +102,7 @@
             <div class="blog-heading">
                 <span>12/24/2013</span>
                 <span>
-                    <a href="#comments" id="post-comment-count"></a>
+                    <a href="#comments" id="post-comment-count">Loading comments...</a>
                 </span>
             </div>
             <hr class="blog-heading-divider"/>
@@ -120,5 +121,45 @@ Pusheen high Overlord my comforter harken unto me bless me in your mighty name w
     </div>
 </div>
         </div>
+
+        <!-- Modal -->
+<div
+  class="modal fade"
+  id="galleryModal"
+  tabindex="-1"
+  aria-labelledby="galleryModalLabel"
+>
+  <i
+    class="fa fa-times-circle-o modal-cross"
+    aria-hidden="true"
+    data-bs-dismiss="modal"
+    aria-label="Close"
+  ></i>
+  <div class="modal-nav-container">
+    <i
+      class="fa fa-chevron-left modal-arrow modal-arrow-left"
+      aria-hidden="true"
+      onclick="showNextOrPrevImg(-1);"
+    ></i>
+  </div>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="d-flex flex-row justify-content-center modal-row">
+        <div class="modal-image-container">
+          <img src="" class="modal-image img-fluid" id="modal-image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-nav-container">
+    <i
+      class="fa fa-chevron-right modal-arrow modal-arrow-right"
+      aria-hidden="true"
+      onclick="showNextOrPrevImg(1);"
+    ></i>
+  </div>
+</div>
+
     </body>
+    <script src="/the-pusheen-cult/scripts/main.js"></script>
 </html>

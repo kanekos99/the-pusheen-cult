@@ -266,12 +266,10 @@ function getComments() {
     if (comments.length == 0 || Object.keys(comments[0]).length < 2) {
       // Once again, Google Sheets can be weird
       c_container.innerHTML = s_noCommentsText;
+      updateCommentCount(0);
     } else {
       displayComments(comments);
     }
-
-    updateCommentCount(comments);
-
     c_submitButton.disabled = false; // Now that everything is done, re-enable the submit button
   });
 }
@@ -363,6 +361,9 @@ function displayComments(comments) {
     reply.className = "c-reply";
     container.appendChild(reply);
   }
+
+  const totalCommentCount = comments.length + replies.length;
+  updateCommentCount(totalCommentCount);
 
   // Handle adding the buttons to show or hide replies if collapsed replies are enabled
   // if (s_collapsedReplies) {
@@ -677,8 +678,7 @@ function changePage(dir) {
 getComments(); // Run once on page load
 
 //additional comment feature for pusheen cult
-function updateCommentCount(comments) {
-  commentCount = comments.length;
+function updateCommentCount(commentCount) {
   const c_comment_count = document.getElementById("post-comment-count");
   if (commentCount == 0) {
     c_comment_count.innerHTML = "0 comments";

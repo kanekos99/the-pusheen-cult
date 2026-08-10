@@ -38,6 +38,12 @@ a .site-title {
   color: #24678d;
 }
 
+ul:not(.nav-row),
+li:not(.nav-item) {
+  font-family: "Delius Swash Caps", cursive;
+  color: #4d787b;
+}
+
 .top-bar {
   height: 45px;
   width: 100%;
@@ -237,7 +243,7 @@ nav {
 
 .dropdown-menu-custom {
   position: absolute;
-  top: 35px;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(0px);
   background-color: white;
@@ -404,6 +410,14 @@ nav {
 
 .post-body-img-l {
   max-width: 100%;
+}
+
+.post-read-more {
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: bold;
+  display: block;
+  text-align: right;
+  width: 100%;
 }
 
 .member-row {
