@@ -4,38 +4,49 @@ layout: "base.njk"
 nesting: "./"
 ---
 
-<div class="content-box py-5 px-5 rounded-box-bottom shadow-sm form-page">
+<div class="content-box left-content py-5 px-5 shadow-sm">
+<div class="w-100" >
+    <h2>Members</h2>
+    <p id="member-count"></p>
+    {# <div id="member-list"></div> #}
+</div>
+</div>
+
+<div class="content-box pt-5 pb-5 px-5 rounded-box-bottom shadow-sm form-page mt-3">
     <p>Simply fill up the form to join the Holy Worship! ^.^</p>
     <div class="form mb-5">
-        <div>
-            <label class="form-heading"
+        <form id="member_form" onsubmit="member_submitButton.disabled = true; v_submitted = true;" method="post" target="c_hiddenIframe" action="https://docs.google.com/forms/d/e/1FAIpQLSd8EJjb4946nTT_KWqFcwtLqnf7lCimFJoJTlt4IK_qQkdfig/formResponse">
+            <div>
+                <label class="form-heading" for="entry.2050543907"
               >Name <span class="red-text">*</span></label
+            >
+            </div>
+            <div class="form-group">
+                <input
+                type="text"
+                id="entry.2050543907"
+                name="entry.2050543907"
+                class="form-text-input"/>
+            </div>
+            <div class="mt-3">
+                <label class="form-heading"
+              >Email</span></label
             >
         </div>
         <div class="form-group">
-            <div class="form-label-box">
-                <input
-                type="text"
-                id="first-name-input"
-                class="form-text-input"
-/>
-                <label for="first-name-input" class="form-heading-sm"
-                >First</label>
-            </div>
-            <div class="form-label-box">
-                <input type="text" id="last-name-input" class="form-text-input"/>
-                <label for="last-name-input" class="form-heading-sm">Last</label>
-            </div>
+            <input type="email" 
+                class="form-text-input" 
+                id="entry.1020743832"
+                name="entry.1020743832"/>
         </div>
-        <div class="mt-3">
-            <label class="form-heading"
-              >Email</span></label
-            >
-    </div>
-    <div class="form-group">
-        <input type="email" id="email-input" class="form-text-input w-100"/>
-    </div>
-    <div class="mt-4">
-        <button class="submit-btn">Submit</button>
-    </div>
+        <div class="mt-4">
+            <input type="submit" name="member_submitButton" class="submit-btn" id="member_submitButton" value="Submit">
+        </div>
+    </form>
 </div>
+
+</div>
+
+
+
+<script src="{{ '/scripts/membership.js' | url }}"></script>

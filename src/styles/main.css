@@ -18,7 +18,7 @@ body {
   background-repeat: repeat;
   height: 100%;
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 a {
@@ -237,7 +237,7 @@ nav {
 
 .dropdown-menu-custom {
   position: absolute;
-  top: 100%;
+  top: 35px;
   left: 50%;
   transform: translateX(-50%) translateY(0px);
   background-color: white;
@@ -298,6 +298,7 @@ nav {
 .form {
   font-family: "Delius Swash Caps", cursive;
   color: #5d6365;
+  width: 100%;
 }
 
 .form-heading {
@@ -326,6 +327,7 @@ nav {
   -webkit-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.3);
   display: block;
+  min-width: 50%;
 }
 
 .radio-group {
@@ -404,6 +406,36 @@ nav {
   max-width: 100%;
 }
 
+.member-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #d9d9d953;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 10px;
+}
+
+.member-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #626262;
+  margin: 0px;
+}
+
+#member-count {
+  margin: 0px;
+}
+
+.join-date {
+  font-style: italic;
+  color: #96a2a6;
+  margin: 0px;
+}
+
 .text-mobile {
   display: none;
 }
@@ -447,6 +479,7 @@ nav {
     padding-top: 30px !important;
     padding-left: 6% !important;
     padding-right: 6% !important;
+    padding-bottom: 30px !important;
     margin: 0px 2% 0px 2%;
   }
 
@@ -480,8 +513,8 @@ nav {
   }
 
   a .site-title {
-  font-size: 3.1em;
-}
+    font-size: 3.1em;
+  }
 
   .dropdown-menu-custom li a {
     display: block;
@@ -496,7 +529,7 @@ nav {
 
   .dropdown-menu-custom {
     position: absolute;
-    top: 100%;
+    top: 35px;
     left: 50%;
     transform: translateX(-50%) translateY(0px);
     background-color: white;
