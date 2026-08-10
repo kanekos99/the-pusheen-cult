@@ -450,6 +450,10 @@ nav {
   margin: 0px;
 }
 
+.testmonials-list {
+  width: 100%;
+}
+
 .text-mobile {
   display: none;
 }
