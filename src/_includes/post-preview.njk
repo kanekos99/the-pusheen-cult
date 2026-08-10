@@ -4,12 +4,15 @@
     </h2>
     <div class="blog-heading">
         <span>{{ post.data.date | postDate }}</span>
-        <span>
+        {# <span>
             <a href="">0 Comments</a>
-        </span>
+        </span> #}
     </div>
     <hr class="blog-heading-divider"/>
     <div class="post-content">
-        {{ post.content | safe }}
+        {{ post | excerpt | safe }}
+        {% if "<!-- excerpt -->" in post.templateContent %}
+            <a href="{{ post.url | url }}" class="post-read-more">Read More</a>
+        {% endif %}
     </div>
 </div>

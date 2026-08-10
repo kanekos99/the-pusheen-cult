@@ -5,69 +5,45 @@ nesting: "./"
 ---
 
 <div class="content-box py-5 px-5 rounded-box-bottom shadow-sm form-page">
-    <p>
+    <div class="w-100">
+        <h2>The Lord is listening</h2>
+        <p>
           The Lord is always listening. Send your prayers and she may respond.
           <br/>
-          Alternatively, you can also send in your testimonials to us here.
+          Alternatively, you can also send in your testimonials to us <b><a href="{{ '/testimonials/' | url }}">here</a></b>.
         </p>
-    <div class="form mb-5">
-        <div>
-            <label class="form-heading"
+        <div class="form mb-5">
+            <div>
+                <label class="form-heading"
               >Name <span class="red-text">*</span></label
             >
-        </div>
-        <div class="form-group">
-            <input type="text" id="name-input" class="form-text-input"/>
-        </div>
-        <div class="mt-3">
-            <label class="form-heading"
-              >Email <span class="red-text">*</span></label
+            </div>
+            <div class="form-group">
+                <input type="text" id="name-input" class="form-text-input"/>
+            </div>
+            <div class="mt-3">
+                <label class="form-heading"
+              >Email</label
             >
-        </div>
-        <div class="form-group">
-            <input
+            </div>
+            <div class="form-group">
+                <input
               type="email"
               id="email-input"
               class="form-text-input"
 />
-        </div>
-        <div class="mt-3 mb-2">
-            <label class="form-heading"
-              >Type <span class="red-text">*</span></label
-            >
-        </div>
-        <div class="radio-group">
-            <div>
-                <input
-                type="radio"
-                id="prayers-radio"
-                value="Prayers"
-                name="submission-type"
-/>
-                <label for="prayers-radio" class="radio-label">Prayers</label>
             </div>
-            <div>
-                <input
-                type="radio"
-                id="testimonials-radio"
-                value="Testimonials"
-                name="submission-type"
-/>
-                <label for="testimonials-radio" class="radio-label"
-                >Testimonials</label
-              >
-            </div>
-        </div>
-        <div class="mt-3 mb-2">
-            <label class="form-heading"
+            <div class="mt-3 mb-2">
+                <label class="form-heading"
               >Message <span class="red-text">*</span></label
             >
-        </div>
-        <div>
-            <textarea class="form-text-input message-box"></textarea>
-        </div>
-        <div class="mt-4">
-            <button class="submit-btn">Submit</button>
+            </div>
+            <div>
+                <textarea class="form-text-input message-box"></textarea>
+            </div>
+            <div class="mt-4">
+                <button class="submit-btn">Submit</button>
+            </div>
         </div>
     </div>
 </div>

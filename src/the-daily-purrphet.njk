@@ -1,0 +1,18 @@
+---
+title: The Pusheen Cult
+layout: "base.njk"
+nesting: "./"
+---
+<div
+        class="content-box py-5 px-5 rounded-box-bottom shadow-sm blog-page-content-box"
+      >
+    <div class="blog-container mb-4">
+        {%- for post in collections.news | reverse -%}
+            {% include 'post-preview.njk' %}
+            {%- endfor-%}
+        </div>
+        <div class="img-container">
+            <img class="side-img" src="{{ '/assets/hamburger.png' | url }}"/>
+        </div>
+    </div>
+</div>

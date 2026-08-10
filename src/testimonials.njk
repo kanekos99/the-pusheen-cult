@@ -4,25 +4,69 @@ layout: "base.njk"
 nesting: "./"
 ---
 
-<div class="content-box py-5 px-5 rounded-box-bottom shadow-sm">
-    <div class="mb-3">
-        <h2>Testimonials</h2>
-        <p class="mt-3">
-            <i
+<div class="content-box pt-5 pb-3 px-5 shadow-sm form-page">
+  <div class="w-100">
+    <h2>Share your testimonials</h2>
+    <p>
+          Share your testimonials of the Overlord Pusheen's greatness here!
+          <br/>
+          Alternatively, you can also send in your prayers to us <b><a href="{{ '/the-lord-is-listening/' | url }}">here</a></b>.
+        </p>
+    <div class="form mb-5">
+      <div>
+        <label class="form-heading"
+              >Name <span class="red-text">*</span></label
+            >
+      </div>
+      <div class="form-group">
+        <input type="text" id="name-input" class="form-text-input"/>
+      </div>
+      <div class="mt-3">
+        <label class="form-heading"
+              >Email</label
+            >
+      </div>
+      <div class="form-group">
+        <input
+              type="email"
+              id="email-input"
+              class="form-text-input"
+/>
+      </div>
+      <div class="mt-3 mb-2">
+        <label class="form-heading"
+              >Message <span class="red-text">*</span></label
+            >
+      </div>
+      <div>
+        <textarea class="form-text-input message-box"></textarea>
+      </div>
+      <div class="mt-4">
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-box py-5 px-5 rounded-box-bottom shadow-sm mt-3">
+  <div class="mb-3">
+    <h2>Testimonials</h2>
+    <p class="mt-3">
+      <i
               >"Both the Internet and the Outernet should accept Pusheen as our
               Lord and Saviour! Pusheen is life. Life is Pusheen"</i
             >
-            <br/>
+      <br/>
             -Anonymous
           </p>
-        <p>
-            <i
+    <p>
+      <i
               >"Meow meow meow mew meow!"<br/>
               (which our feline translators have translated to: "Pusheen is
               great! We get free food thanks to her!")</i
             >
-            <br/>
+      <br/>
             - A friendly stray cat
           </p>
-    </div>
+  </div>
 </div>

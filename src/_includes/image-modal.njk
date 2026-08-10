@@ -1,0 +1,37 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="galleryModal"
+  tabindex="-1"
+  aria-labelledby="galleryModalLabel"
+>
+  <i
+    class="fa fa-times-circle-o modal-cross"
+    aria-hidden="true"
+    data-bs-dismiss="modal"
+    aria-label="Close"
+  ></i>
+  <div class="modal-nav-container">
+    <i
+      class="fa fa-chevron-left modal-arrow modal-arrow-left"
+      aria-hidden="true"
+      onclick="showNextOrPrevImg(-1);"
+    ></i>
+  </div>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="d-flex flex-row justify-content-center modal-row">
+        <div class="modal-image-container">
+          <img src="" class="modal-image img-fluid" id="modal-image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-nav-container">
+    <i
+      class="fa fa-chevron-right modal-arrow modal-arrow-right"
+      aria-hidden="true"
+      onclick="showNextOrPrevImg(1);"
+    ></i>
+  </div>
+</div>

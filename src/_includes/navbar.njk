@@ -1,18 +1,18 @@
 <nav>
     <ul class="nav-row">
-        <li class="{% if page.url == '/' %}active-nav{% endif %}">
+        <li class="{% if page.url == '/' %}active-nav{% endif %} nav-item">
             <a href="{{ '/' | url }}">Home</a>
         </li>
-        <li class="{% if page.url == '/about-worship/' %}active-nav{% endif %}">
+        <li class="{% if page.url == '/about-worship/' %}active-nav{% endif %} nav-item">
             <a href="{{ '/about-worship/' | url }}">About Worship</a>
         </li>
-        <li class="{% if page.url == '/join-up/' %}active-nav{% endif %}">
-            <a href="{{ '/join-up/' | url }}">Join up</a>
+        <li class="{% if page.url == '/join-up/' %}active-nav{% endif %} nav-item">
+            <a href="{{ '/join-up/' | url }}">Join Up</a>
         </li>
-        <li class="{% if page.url == '/daily-prayers/' %}active-nav{% endif %}">
+        <li class="{% if page.url == '/daily-prayers/' %}active-nav{% endif %} nav-item">
             <a href="{{ '/daily-prayers/' | url }}">Daily Prayers</a>
         </li>
-        <li class="dropdown-container">
+        <li class="dropdown-container nav-item">
             <span class="text-desktop">more...</span>
             <span class="text-mobile">Menu</span>
             <ul class="dropdown-menu-custom">
@@ -23,13 +23,13 @@
                     <a href="{{ '/about-worship/' | url }}">About Worship</a>
                 </li>
                 <li class="nav-mobile">
-                    <a href="{{ '/join-up/' | url }}">Join up</a>
+                    <a href="{{ '/join-up/' | url }}">Join Up</a>
                 </li>
                 <li class="nav-mobile">
                     <a href="{{ '/daily-prayers/' | url }}">Daily Prayers</a>
                 </li>
                 <li>
-                    <a href="">The Daily Purrphet</a>
+                    <a href="{{ '/the-daily-purrphet/' | url }}">The Daily Purrphet</a>
                 </li>
                 <li>
                     <a href="{{ '/the-lord-is-listening/' | url }}">The Lord is listening</a>

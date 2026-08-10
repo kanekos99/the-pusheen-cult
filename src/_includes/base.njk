@@ -13,6 +13,7 @@
 />
 
         <link rel="stylesheet" type="text/css" href="{{ '/styles/main.css' | url }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ '/styles/images.css' | url }}"/>
         <link rel="stylesheet" type="text/css" href="{{ '/styles/comment-widget.css' | url }}"/>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -37,7 +38,7 @@
         <header>
             <div class="top-bar shadow-sm"></div>
             <div class="mt-5">
-                <a href="">
+                <a href="/">
                     <h1 class="site-title">The Pusheen Cult</h1>
                 </a>
             </div>
@@ -46,5 +47,8 @@
         <div class="content-container mb-5 pt-5 shadow pb-4">
             {{ content | safe }}
         </div>
+
+        {% include 'image-modal.njk' %}
     </body>
+    <script src="{{ '/scripts/main.js' | url }}"></script>
 </html>
