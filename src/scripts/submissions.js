@@ -1,7 +1,9 @@
 const submit_button = document.getElementById("submitButton");
 const submit_form = document.getElementById("submit_form");
 let submissions = document.getElementById("submissions");
-let v_pagePath = window.location.pathname;
+const fullPath = window.location.pathname.split("/").filter(Boolean);
+let lastPath = fullPath.pop(); 
+let v_pagePath = `/${lastPath}/`; 
 
 const s_formId = "1FAIpQLScSApUU3Hl57oWIsa2BPU-mTTE5UWCGSoeXUaFppoODRgzB_g";
 const s_nameId = "936029012";
@@ -89,7 +91,7 @@ function getData() {
     // Check for empty comments before displaying to page
     if (comments.length == 0 || Object.keys(comments[0]).length < 2) {
       // Once again, Google Sheets can be weird
-      if (v_pagePath == "/the-pusheen-cult/the-lord-is-listening/") {
+      if (v_pagePath == "/the-lord-is-listening/") {
         submissions.innerHTML = defaultPrayerInnerHtml;
       } else {
         submissions.innerHTML = defaultTestmonialInnerHTML;
@@ -103,7 +105,7 @@ function getData() {
 }
 
 function displayComments(comments) {
-  if (v_pagePath == "/the-pusheen-cult/the-lord-is-listening/") {
+  if (v_pagePath == "/the-lord-is-listening/") {
     submissions.innerHTML = "";
   } else {
     submissions.innerHTML = defaultTestmonialInnerHTML;

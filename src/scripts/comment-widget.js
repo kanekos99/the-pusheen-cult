@@ -146,7 +146,9 @@ if (s_commentsOpen) {
 }
 
 // Add invisible page input to document
-let v_pagePath = window.location.pathname;
+const fullPath = window.location.pathname.split("/").filter(Boolean);
+let lastPath = fullPath.pop(); 
+let v_pagePath = `/${lastPath}/`; 
 if (s_includeUrlParameters) {
   v_pagePath += window.location.search;
 }

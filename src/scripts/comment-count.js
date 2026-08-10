@@ -18,12 +18,12 @@ function getCommentCount() {
     const isPage = (col) => col.label == "Page";
     let pageIdx = json.table.cols.findIndex(isPage);
 
-    console.log(pageIdx);
     const blogPostsCommentCount = document.querySelectorAll("a[data-url]");
     console.log(blogPostsCommentCount);
     blogPostsCommentCount.forEach((commentLink) => {
-      const url = commentLink.getAttribute("data-url");
-      console.log(url);
+      const fullPath = commentLink.getAttribute("data-url").split("/").filter(Boolean);
+      let lastPath = fullPath.pop(); 
+      let url = `/${lastPath}/`; 
       let commentCount = 0;
       if (json.table.parsedNumHeaders > 0) {
         // Check if any comments exist in the sheet at all before continuing
