@@ -1,6 +1,7 @@
 const submit_button = document.getElementById("submitButton");
-const testimonials = document.getElementById("testimonials");
 const submit_form = document.getElementById("submit_form");
+let submissions = document.getElementById("submissions");
+let v_pagePath = window.location.pathname;
 
 const s_formId = "1FAIpQLScSApUU3Hl57oWIsa2BPU-mTTE5UWCGSoeXUaFppoODRgzB_g";
 const s_nameId = "936029012";
@@ -23,6 +24,10 @@ const defaultTestmonialInnerHTML = `
     <br/>
     - A friendly stray cat
   </p>
+`;
+
+const defaultPrayerInnerHtml = `
+  <p class="mt-3">No submissions yet!</p>
 `;
 
 function getData() {
@@ -84,8 +89,12 @@ function getData() {
     // Check for empty comments before displaying to page
     if (comments.length == 0 || Object.keys(comments[0]).length < 2) {
       // Once again, Google Sheets can be weird
-      testimonials.innerHTML = defaultTestmonialInnerHTML;
-      testimonials += "<p></i>No more testimonials!</i></p>";
+      if (v_pagePath == "/the-pusheen-cult/the-lord-is-listening/") {
+        submissions.innerHTML = defaultPrayerInnerHtml;
+      } else {
+        submissions.innerHTML = defaultTestmonialInnerHTML;
+      }
+      submissions += "<p></i>No more submissions!</i></p>";
     } else {
       displayComments(comments);
     }
@@ -94,7 +103,11 @@ function getData() {
 }
 
 function displayComments(comments) {
-  testimonials.innerHTML = defaultTestmonialInnerHTML;
+  if (v_pagePath == "/the-pusheen-cult/the-lord-is-listening/") {
+    submissions.innerHTML = "";
+  } else {
+    submissions.innerHTML = defaultTestmonialInnerHTML;
+  }
   comments.forEach((comment) => {
     let commentName = "";
     let commentText = "";
@@ -118,7 +131,7 @@ function displayComments(comments) {
         - ${commentName}
       </p>
     `;
-    testimonials.innerHTML += commentHtml;
+    submissions.innerHTML += commentHtml;
   });
 }
 
@@ -144,7 +157,6 @@ function getSheet(url) {
 // hidden page input
 let s_includeUrlParameters = false;
 const s_fixRarebitIndexPage = false;
-let v_pagePath = window.location.pathname;
 if (s_includeUrlParameters) {
   v_pagePath += window.location.search;
 }

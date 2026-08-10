@@ -22,9 +22,6 @@ function showNextOrPrevImg(direction) {
 }
 
 function showImage(image) {
-  console.log("Clicked show image!");
-  console.log(image);
-
   modalImg.style.display = "none";
   modalImg.src = image.src;
 

@@ -48,6 +48,21 @@ li:not(.nav-item) {
   height: 45px;
   width: 100%;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0px 20px 0px 20px;
+}
+
+.top-bar a {
+  font-family: "Advent Pro", sans-serif;
+  color: #96a2a6;
+}
+
+.top-bar a:hover {
+  color: #6a7477;
+  font-weight: bold;
+  transition: ease-in-out 0.2s;
 }
 
 .content-container {
@@ -450,7 +465,7 @@ nav {
   margin: 0px;
 }
 
-.testmonials-list {
+.submissions-list {
   width: 100%;
 }
 
@@ -596,4 +611,28 @@ nav {
   .about-img {
     width: 200px;
   }
+}
+
+/*---------------------------- Scrollbar -----------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d6dcdc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(196, 196, 196);
+  width: 10px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(146, 146, 146);
+  cursor: pointer;
 }
