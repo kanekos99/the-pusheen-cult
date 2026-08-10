@@ -22,10 +22,30 @@
   gap: 0.1rem;
 }
 
+.gallery-thumbnail-container-2 {
+  display: flex;
+  margin: 2px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 1px solid rgb(205, 205, 205);
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.gallery-thumbnail-2 {
+  display: block;
+  width: 15rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  object-fit: cover;
+  object-position: 25% 12%;
+  border: 5px solid rgb(255, 255, 255);
+}
+
 /*-----------------------Modal----------------------------*/
 
 .modal-open {
-  padding-right: 15px !important;
+  padding-right: 10px !important;
   overflow: hidden !important;
   height: 100% !important;
 }
@@ -150,5 +170,7 @@
   .gallery-thumbnail {
     flex-grow: 1;
     flex-shrink: 1;
+    height: auto;
+    width: 10rem;
   }
 }
