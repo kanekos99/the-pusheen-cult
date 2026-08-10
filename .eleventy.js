@@ -11,15 +11,25 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_SHORT);
   });
 
-  eleventyConfig.addFilter("excerpt", (post) => {
-    const content = post.content || "";
-    if (!content) return "";
+  // eleventyConfig.addFilter("excerpt", (post) => {
+  //   const content = post.content || "";
+  //   if (!content) return "";
 
-    if (content.includes("<!-- excerpt -->")) {
-      return content.split("<!-- excerpt -->")[0];
+  //   if (content.includes("<!-- excerpt -->")) {
+  //     return content.split("<!-- excerpt -->")[0];
+  //   }
+
+  //   return content;
+  // });
+
+  eleventyConfig.addFilter("excerpt", function (htmlContent) {
+    if (typeof htmlContent !== "string") return "";
+
+    if (htmlContent.includes("<!-- excerpt -->")) {
+      return htmlContent.split("<!-- excerpt -->")[0];
     }
 
-    return content;
+    return htmlContent;
   });
 
   eleventyConfig.addCollection("allTags", function (collectionApi) {
