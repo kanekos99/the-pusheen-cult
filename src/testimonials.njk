@@ -10,63 +10,73 @@ nesting: "./"
     <p>
           Share your testimonials of the Overlord Pusheen's greatness here!
           <br/>
-          Alternatively, you can also send in your prayers to us <b><a href="{{ '/the-lord-is-listening/' | url }}">here</a></b>.
+          Alternatively, you can also send in prayers to our Feline Overlord <b>
+        <a href="{{ '/the-lord-is-listening/' | url }}">here</a>
+      </b>.
         </p>
     <div class="form mb-5">
-      <div>
-        <label class="form-heading"
-              >Name <span class="red-text">*</span></label
-            >
-      </div>
-      <div class="form-group">
-        <input type="text" id="name-input" class="form-text-input"/>
-      </div>
-      <div class="mt-3">
-        <label class="form-heading"
-              >Email</label
-            >
-      </div>
-      <div class="form-group">
-        <input
-              type="email"
-              id="email-input"
-              class="form-text-input"
+      <form id="submit_form" onsubmit="submitButton.disabled = true; v_submitted = true;" method="post" target="c_hiddenIframe" action="https://docs.google.com/forms/d/e/1FAIpQLScSApUU3Hl57oWIsa2BPU-mTTE5UWCGSoeXUaFppoODRgzB_g/formResponse">
+        <div>
+          <label class="form-heading"
+                >Name <span class="red-text">*</span></label
+              >
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-text-input" id="entry.936029012" name="entry.936029012" required/>
+        </div>
+        <div class="mt-3">
+          <label class="form-heading"
+                >Website</label
+              >
+        </div>
+        <div class="form-group">
+          <input
+                type="text"
+                class="form-text-input"
+                id="entry.930512521"
+                name="entry.930512521"
 />
-      </div>
-      <div class="mt-3 mb-2">
-        <label class="form-heading"
-              >Message <span class="red-text">*</span></label
-            >
-      </div>
-      <div>
-        <textarea class="form-text-input message-box"></textarea>
-      </div>
-      <div class="mt-4">
-        <button class="submit-btn">Submit</button>
-      </div>
+        </div>
+        <div class="mt-3 mb-2">
+          <label class="form-heading"
+                >Message <span class="red-text">*</span></label
+              >
+        </div>
+        <div>
+          <textarea class="form-text-input message-box" name="entry.1237998829" id="entry.1237998829" rows="4" cols="45" maxlength="500" required pattern=".*\S.*"></textarea>
+        </div>
+        <div class="mt-4">
+          <input type="submit" name="submitButton" class="submit-btn" id="submitButton" value="Submit">
+        </div>
+      </form>
     </div>
   </div>
 </div>
 
 <div class="content-box py-5 px-5 rounded-box-bottom shadow-sm mt-3">
-  <div class="mb-3">
+  <div class="mb-3 testmonials-list">
     <h2>Testimonials</h2>
-    <p class="mt-3">
-      <i
+    <div id="testimonials">
+      <p class="mt-3">
+        <i
               >"Both the Internet and the Outernet should accept Pusheen as our
               Lord and Saviour! Pusheen is life. Life is Pusheen"</i
             >
-      <br/>
+        <br/>
             -Anonymous
           </p>
-    <p>
-      <i
+      <p>
+        <i
               >"Meow meow meow mew meow!"<br/>
               (which our feline translators have translated to: "Pusheen is
               great! We get free food thanks to her!")</i
             >
-      <br/>
+        <br/>
             - A friendly stray cat
           </p>
+        <p>Loading more testimonials...</p>
+    </div>
   </div>
 </div>
+
+<script src="{{ '/scripts/submissions.js' | url }}"></script>
