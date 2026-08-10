@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("excerpt", (post) => {
-    const content = post.templateContent;
+    const content = post.content || "";
     if (!content) return "";
 
     if (content.includes("<!-- excerpt -->")) {
