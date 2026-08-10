@@ -11,7 +11,7 @@
     <hr class="blog-heading-divider"/>
     <div class="post-content">
         {{ post | excerpt | safe }}
-        {% if "<!-- excerpt -->" in post.templateContent %}
+        {% if "<!-- excerpt -->" in post.content %}
             <a href="{{ post.url | url }}" class="post-read-more">Read More</a>
         {% endif %}
     </div>
